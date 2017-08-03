@@ -1,0 +1,92 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+#banner {
+    background: #111;
+    position: absolute;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    left: 50%;
+    top: 50%;
+    margin-left: -$banner-width / 2;
+    margin-top: -$banner-height / 2;
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+
+    #border {
+        border: 3px solid #FFFFFF;
+        display: block;
+        width: $banner-width - 6;
+        height: $banner-height - 6;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+    }
+
+    #border2 {
+        border: 1px solid #000000;
+        display: block;
+        width: $banner-width - 2;
+        height: $banner-height - 2;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+    }
+
+    #curtain {
+        left: 0;
+        top: 0;
+        width: $banner-width;
+        height: $banner-height;
+        background-color: rgba(255, 255, 255, 1);
+        pointer-events: none;
+        position: absolute;
+    }
+
+    #footer {
+        background: #FFFFFF;
+        right: 0;
+        top: 0;
+        width: 100px;
+        height: $banner-height;
+        position: absolute;
+
+        #logo {
+            right: 21px;
+            bottom: 13px;
+            position: absolute;
+        }
+    }
+
+    #scene {
+        left: 375px;
+        top: -200px;
+        width: 870px;
+        height: $banner-height;
+        transform: scale(9) translate3d(0, 0, 0.1px);
+        transition: transform 0.1s linear;
+        position: absolute;
+
+        #guide2 {
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+    }
+}
