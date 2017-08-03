@@ -63,8 +63,8 @@ app.Animation = (function () {
             .to(city, 3, {opacity: 0}, "-=1");
 
         tl2.from(tiguan, 3, {scale:.1, x:"+=135", y:"-=15", ease: Sine.easeInOut}, "+=4")
-            .from(fRim, 3, {rotation:"+=1180", ease:Sine.easeOut}, "-=3")
-            .from(rRim, 3, {rotation:"+=1180", ease:Sine.easeOut}, "-=3")
+            .from(fRim, 3, {rotation:"+=2000", ease:Sine.easeOut}, "-=3")
+            .from(rRim, 3, {rotation:"+=2000", ease:Sine.easeOut}, "-=3")
             .to(fRim, .75, {opacity:0}, "-=.5")
             .to(rRim, .75, {opacity:0}, "-=.5");
 
