@@ -42,10 +42,6 @@ app.Animation = (function () {
         buttonExit = document.getElementById('button-exit');
         TweenMax.set(scene, {transformOrigin: "100% 0%"});
 
-        buttonExit.addEventListener('click', function() {
-            window.open(window.clickTag);
-        });
-
         buttonExit.addEventListener('mouseover', function() {
             TweenMax.to(cta, .25, {backgroundColor:"#1072af"});
         });
